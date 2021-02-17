@@ -152,11 +152,11 @@ class MakeSlicedTimeDataset(object):
 				trainpaths += [datapaths[i]]
 
 		if opt=="train":
-			print opt+(" data of size: ", len(trainpaths))
+			print (opt+" data of size: ", len(trainpaths))
 			#print(trainpaths[:10])
 			return trainpaths
 		if opt=="test":
-			print opt+(" data of size: ", len(testpaths))
+			print (opt+" data of size: ", len(testpaths))
 			return testpaths
 
 	def gather_data(self, datapaths):
@@ -218,11 +218,11 @@ class MakeIdentityExpressionDataset(object):
 				trainpaths += [datapaths[i]]
 
 		if opt=="train":
-			print opt+(" data of size: ", len(trainpaths))
+			print (opt+" data of size: ", len(trainpaths))
 			#print(trainpaths[:10])
 			return trainpaths
 		if opt=="test":
-			print opt+(" data of size: ", len(testpaths))
+			print (opt+" data of size: ", len(testpaths))
 			return testpaths
 
 	def gather_data(self, datapaths):
