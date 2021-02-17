@@ -5,7 +5,8 @@ import sklearn
 import scipy.sparse
 import numpy as np
 import os, time, collections, shutil
-import tensorflow.contrib.keras as keras
+#import tensorflow.contrib.keras as keras
+from tensorflow.python.compiler import tensorrt as trt
 
 
 #NFEATURES = 28**2
