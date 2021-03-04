@@ -886,7 +886,7 @@ class cgcnn(base_model):
         return tf.transpose(x, perm=[0, 2, 1])  # N x M x Fout
 
     def fourier(self, x, L, Fout, K):
-        print K, L.shape[0]
+        print (K, L.shape[0])
         assert K == L.shape[0]  # artificial but useful to compute number of parameters
         N, M, Fin = x.get_shape()
         N, M, Fin = int(N), int(M), int(Fin)
@@ -1131,8 +1131,8 @@ class coma(base_model):
         #L = self.L
         
         # Print information about NN architecture.
-        Ngconv = len(p)
-        Nfc = len(nz)
+        Ngconv = len(list(p))
+        Nfc = len(list(nz))
         print('NN architecture')
         '''
         print('  input: M_0 = {}'.format(M_0))
